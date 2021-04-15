@@ -1,0 +1,21 @@
+{
+    "pairs.enableCharacters": [
+        "(",
+        "[",
+        "{",
+        "'",
+        "\"",
+        "`"
+    ],
+    "pairs.disableLanguages": [
+        "html",
+        "htmldjango"
+    ],
+    "suggest.noselect": false,
+    "coc.preferences.formatOnSaveFiletypes": [
+        "python",
+        "json"
+    ],
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true
+}
