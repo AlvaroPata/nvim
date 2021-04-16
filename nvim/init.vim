@@ -22,12 +22,6 @@ source ~/.config/nvim/scripts/mouse.vim
 source ~/.config/nvim/plug-config/closetag.vim
 source ~/.config/nvim/plug-config/indentline.vim
 source ~/.config/nvim/plug-config/nerdtree.vim
+source ~/.config/nvim/general/detect.vim
 "source ~/.config/nvim/keys/which-key.vim
-
-augroup filetype_vim
-    autocmd!
-    autocmd Filetype vim setlocal foldmethod=marker
-augroup END
-
-
 

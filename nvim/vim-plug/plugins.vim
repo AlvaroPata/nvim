@@ -41,6 +41,6 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
 Plug 'tweekmonster/django-plus.vim'
-Plug 'tpop/vim-comentary'
+Plug 'tpope/vim-commentary'
 " Plug 'liuchengxu/vim-which-key'
 call plug#end()
