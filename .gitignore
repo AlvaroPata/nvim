@@ -5,3 +5,4 @@ iterm2/*
 configstore/*
 .DS_store
 nvim/autoload/*
+coc/*
