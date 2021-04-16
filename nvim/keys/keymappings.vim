@@ -80,6 +80,10 @@ vnoremap <leader>' c''<esc>hpl
 " add double quotes around visually selected word
 vnoremap <leader>" c""<esc>hpl
 
+" Comment
+nnoremap <silent> <leader>/ :Commentary<CR>
+vnoremap <silent> <leader>/ :Commentary<CR>
+
 " go to the BOL
 nnoremap <leader>H ^
 " go to EOL
@@ -96,6 +100,58 @@ nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
+
+" operator-pending mappings
+" inside function [b]ody
+onoremap b /return<cr>
+" inside [p]arenthesis
+onoremap p i(
+" inside next parenthesis
+onoremap in( :<c-u>normal! f(vi(<cr>
+" inside last parenthesis
+onoremap il( :<c-u>normal! F)vi(<cr>
+" inside next square brackets
+onoremap in[ :<c-u>normal! f[vi[<cr>
+" inside last square brackets
+onoremap il[ :<c-u>normal! F]vi[<cr>
+" inside next curly brackets
+onoremap in{ :<c-u>normal! f{vi{<cr>
+" inside last curly brackets
+onoremap il{ :<c-u>normal! F}vi{<cr>
+" inside next single quotes
+onoremap in' :<c-u>normal! f'vi'<cr>
+" inside last single quotes
+onoremap il' :<c-u>normal! F'vi'<cr>
+" inside next double quotes
+onoremap in" :<c-u>normal! f"vi"<cr>
+" inside last double quotes
+onoremap il" :<c-u>normal! F"vi"<cr>
+" around next parenthesis
+onoremap an( :<c-u>normal! f(va(<cr>
+" around last parenthesis
+onoremap al( :<c-u>normal! F)va(<cr>
+" around next square brackets
+onoremap an[ :<c-u>normal! f[va[<cr>
+" around last square brackets
+onoremap al[ :<c-u>normal! F]va[<cr>
+" around next curly brackets
+onoremap an{ :<c-u>normal! f{va{<cr>
+" around last curly brackets
+onoremap al{ :<c-u>normal! F}va{<cr>
+" around next single quotes
+onoremap an' :<c-u>normal! f'va'<cr>
+" around last single quotes
+onoremap al' :<c-u>normal! F'va'<cr>
+" around next double quotes
+onoremap an" :<c-u>normal! f"va"<cr>
+" around last double quotes
+onoremap al" :<c-u>normal! F"va"<cr>
+
+augroup filetype python
+    autocmd!
+    " go to imports"
+    autocmd Filetype python nnoremap <buffer> <leader>i gg}O
+augroup END
 
 augroup filetype_html
     autocmd!

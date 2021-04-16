@@ -14,7 +14,9 @@
     "suggest.noselect": false,
     "coc.preferences.formatOnSaveFiletypes": [
         "python",
-        "json"
+        "json",
+        "html",
+        "htmldjango"
     ],
     "python.linting.enabled": true,
     "python.linting.flake8Enabled": true

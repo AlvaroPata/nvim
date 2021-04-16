@@ -1,5 +1,5 @@
 " set leader keyzs
-let g:mapleader = "\<Space>"
+let mapleader = " "
 let localleader = "\\"
 
 syntax enable                           " Enables syntax highlighting
