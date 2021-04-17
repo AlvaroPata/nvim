@@ -26,8 +26,8 @@ inoremap <silent> jk <esc>
 " Escape insert mode and add new line below with jkl
 inoremap <silent> JK <esc>o
 
-" close file from normal mode with jk
-nnoremap <silent> JK :q<cr>
+" close buffer from normal mode with jk
+nnoremap <silent> JK :bd<cr>
 
 " Easy CAPS
 inoremap <c-u> <ESC>viwUi

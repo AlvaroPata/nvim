@@ -5,16 +5,15 @@ augroup END
 
 augroup python_files
     autocmd!
-    autocmd BufRead,BufEnter *.py echom "django script should be working"
-    autocmd BufRead,BufEnter *.py call DetectPythonVariant()
+    autocmd FileType python call DetectPythonVariant()
+    " autocmd BufRead,BufEnter *.py call DetectPythonVariant()
 augroup END
 
 augroup html_files
     autocmd!
-    autocmd BufRead,BufEnter *.html,*.htm,*.j2 call DetectHTMLVariant()
-    autocmd BufRead,BufEnter *.html echom "htmldjango script should be working"
+    autocmd FileType html call DetectHTMLVariant()
+    " autocmd BufRead,BufEnter *.html,*.htm,*.j2 call DetectHTMLVariant()
 augroup END
-
 
 " This function detects, based on Python content, whether this is a
 " Django file, which may enabling snippet completion for it
@@ -24,7 +23,6 @@ fun! DetectPythonVariant()
         " check for django
         if getline(n) =~ 'import\s\+\<django\>' || getline(n) =~ 'from\s\+\<django\>'
             set ft=python.django
-            "set syntax=python
             return
         endif
         let n = n + 1

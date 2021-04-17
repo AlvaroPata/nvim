@@ -20,7 +20,6 @@ set smarttab                            " Makes tabbing smarter will realize you
 set expandtab                           " Converts tabs to spaces
 set smartindent                         " Makes indenting smart
 set autoindent                          " Good auto indent
-set laststatus=0                        " Always display the status line
 set number                              " Line numbers
 set relativenumber                      " Relative Numbers
 set cursorline                          " Enable highlighting of the current line
@@ -32,7 +31,9 @@ set nowritebackup                       " This is recommended by coc
 set noswapfile                          " No annoying swap files
 set updatetime=300                      " Faster completion
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
-set formatoptions-=cro                  " Stop newline continution of comments
+set formatoptions-=c                   " Stop newline continution of comments
+set formatoptions-=r                   " Stop newline continution of comments
+set formatoptions-=o                   " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 set incsearch                           " incremental search
 set nohls                               " Don't keep highlight after search is done
