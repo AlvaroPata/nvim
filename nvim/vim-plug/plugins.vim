@@ -42,5 +42,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
 Plug 'tweekmonster/django-plus.vim'
 Plug 'tpope/vim-commentary'
+Plug 'easymotion/vim-easymotion'
 " Plug 'liuchengxu/vim-which-key'
+" Plug 'karoliskoncevicius/vim-sendtowindow'
+
 call plug#end()
