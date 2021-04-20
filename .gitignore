@@ -6,3 +6,4 @@ configstore/*
 .DS_store
 nvim/autoload/*
 coc/*
+nvim/session/*
