@@ -13,6 +13,7 @@ let g:startify_lists = [
 let g:startify_bookmarks = [
             \ { 'c': '~/code/c4c' },
             \ { 'i': '~/.config/nvim/init.vim' },
+            \ { 'p': '~/.config/nvim/vim-plug/plugins.vim'},
             \ { 'z': '~/.zshrc' },
             \ { 'C': '~/code' },
             \ ]

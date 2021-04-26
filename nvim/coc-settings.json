@@ -18,6 +18,10 @@
         "html",
         "htmldjango"
     ],
-    "python.linting.enabled": true,
-    "python.linting.flake8Enabled": true
+    "pyright.enable": true,
+    "python.linting.pylintEnabled": true,
+    /* "python.linting.flake8Enabled": true, */
+    "python.linting.flake8Args": ["--ignore=E501"],
+    "python.formatting.provider": "autopep8",
+    "coc.preferences.formatOnType": true
 }

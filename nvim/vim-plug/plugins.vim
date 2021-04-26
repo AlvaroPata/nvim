@@ -19,30 +19,45 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 Plug 'sheerun/vim-polyglot'
+
+Plug 'vimwiki/vimwiki'
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+Plug 'airblade/vim-rooter'
+Plug 'preservim/nerdtree'
+
+Plug 'Yggdroot/indentLine'
+Plug 'alvan/vim-closetag'
+Plug 'bitc/vim-bad-whitespace'
+Plug 'honza/vim-snippets'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+Plug 'vim-scripts/loremipsum'
+
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-" Plug 'ycm-core/YouCompleteMe'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'vim-scripts/loremipsum'
-Plug 'vim-scripts/indentpython.vim'
-Plug 'joshdick/onedark.vim'
-Plug 'vim-scripts/django.vim'
-Plug 'preservim/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'kien/ctrlp.vim'
-Plug 'bitc/vim-bad-whitespace'
-Plug 'alvan/vim-closetag'
-Plug 'tpope/vim-surround'
+
 Plug 'arcticicestudio/nord-vim'
-Plug 'Yggdroot/indentLine'
-Plug 'honza/vim-snippets'
-Plug 'mhinz/vim-startify'
+Plug 'folke/tokyonight.nvim'
+Plug 'joshdick/onedark.vim'
+
+Plug 'vim-scripts/django.vim'
+Plug 'vim-scripts/indentpython.vim'
+
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'junegunn/gv.vim'
+Plug 'mhinz/vim-signify'
+Plug 'tpope/vim-fugitive'
+
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'airblade/vim-rooter'
-Plug 'tweekmonster/django-plus.vim'
-Plug 'tpope/vim-commentary'
+
 Plug 'easymotion/vim-easymotion'
+Plug 'fisadev/vim-isort'
+Plug 'kien/ctrlp.vim'
+Plug 'mhinz/vim-startify'
+
 " Plug 'liuchengxu/vim-which-key'
 " Plug 'karoliskoncevicius/vim-sendtowindow'
 
