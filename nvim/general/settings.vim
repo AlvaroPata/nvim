@@ -43,6 +43,10 @@ set scrolloff=8                         " Better scrolling
 set colorcolumn=80                      " Display recommended line width
 set autoread                            " Load changes made to open files
 
+syntax on
+filetype on
+filetype plugin indent on
+
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 
 " You can't stop me

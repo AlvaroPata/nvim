@@ -18,10 +18,10 @@ source ~/.config/nvim/keys/keymappings.vim
 source ~/.config/nvim/plug-config/start-screen.vim
 source ~/.config/nvim/plug-config/fzf-config.vim
 source ~/.config/nvim/plug-config/coc.vim
-source ~/.config/nvim/scripts/mouse.vim
 source ~/.config/nvim/plug-config/closetag.vim
 source ~/.config/nvim/plug-config/indentline.vim
 source ~/.config/nvim/plug-config/nerdtree.vim
-source ~/.config/nvim/general/detect.vim
+" source ~/.config/nvim/scripts/mouse.vim
+" source ~/.config/nvim/general/detect.vim
 " source ~/.config/nvim/keys/which-key.vim
 

@@ -1,9 +1,5 @@
-" nerdtree settings {{{
 let NERDTreeQuitOnOpen=1
-" }}}
-"
 
-" nerdtree git status indicators {{{
 let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ 'Modified'  :'✹',
                 \ 'Staged'    :'✚',
@@ -16,4 +12,3 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ 'Clean'     :'✔︎',
                 \ 'Unknown'   :'?',
                 \ }
-" }}}
