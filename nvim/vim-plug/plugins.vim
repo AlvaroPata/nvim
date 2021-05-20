@@ -24,7 +24,9 @@ Plug 'vimwiki/vimwiki'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-Plug 'airblade/vim-rooter'
+Plug 'wikitopian/hardmode'
+
+" Plug 'airblade/vim-rooter'
 Plug 'preservim/nerdtree'
 
 Plug 'Yggdroot/indentLine'
@@ -34,6 +36,8 @@ Plug 'honza/vim-snippets'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'vim-scripts/loremipsum'
+Plug 'Konfekt/FastFold'
+Plug 'tmhedberg/SimpylFold'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'

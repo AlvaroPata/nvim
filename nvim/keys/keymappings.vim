@@ -20,11 +20,14 @@ nnoremap <M-k>    :resize +2<CR>
 nnoremap <M-h>    :vertical resize -2<CR>
 nnoremap <M-l>    :vertical resize +2<CR>
 
-" Escape insert mode withjk
+" Escape insert mode with jk
 inoremap <silent> jk <esc>
 
 " Escape insert mode and add new line below with jkl
 inoremap <silent> JK <esc>o
+
+" Move forward in insert mode
+inoremap <silent> <c-l> <right>
 
 " close buffer from normal mode with jk
 nnoremap <silent> JK :bd<cr>
@@ -47,7 +50,8 @@ nnoremap <C-Q> :wq!<CR>
 " Use control-c instead of escape
 nnoremap <C-c> <Esc>
 " <TAB>: completion.
-inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+" Set in coc plug-config file
+" inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " Better tabbing
 vnoremap < <gv
