@@ -151,6 +151,9 @@ onoremap an" :<c-u>normal! f"va"<cr>
 " around last double quotes
 onoremap al" :<c-u>normal! F"va"<cr>
 
+" start Goyo
+noremap <silent> <Leader>yo :Goyo 90<bar> highlight StatusLineNC ctermfg=blue <cr>
+
 augroup filetype python
     autocmd!
     " go to imports"
@@ -161,3 +164,4 @@ augroup filetype_html
     autocmd!
     autocmd FileType html nnoremap <buffer> <localleader>f Vatzf
 augroup END
+

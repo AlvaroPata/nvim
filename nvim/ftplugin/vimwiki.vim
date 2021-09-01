@@ -1,4 +1,4 @@
-setlocal textwidth=80
+setlocal textwidth=79
 setlocal wrap
 setlocal formatoptions+=t
 
