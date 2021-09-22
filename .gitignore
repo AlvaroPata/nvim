@@ -2,7 +2,6 @@ gcloud/*
 gh/*
 htop/*
 dask/*
-iterm2/*
 configstore/*
 .DS_store
 nvim/autoload/*
