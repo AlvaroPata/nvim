@@ -12,6 +12,7 @@ set termguicolors
 let g:tokyonight_style = 'storm'
 colorscheme tokyonight
 
-hi normal guibg=NONE
+hi normal guibg=NONE ctermbg=NONE
+hi EndOfBuffer guibg=NONE ctermbg=NONE
 set cursorline
 let g:airline#extensions#tabline#enabled = 1
