@@ -165,3 +165,7 @@ augroup filetype_html
     autocmd FileType html nnoremap <buffer> <localleader>f Vatzf
 augroup END
 
+augroup requirents_version
+    autocmd!
+    autocmd bufread,bufnewfile requirements.txt let @r='f=r>wyWA,<pdiwxw'
+augroup END
