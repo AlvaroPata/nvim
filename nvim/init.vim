@@ -23,7 +23,6 @@ source ~/.config/nvim/plug-config/indentline.vim
 source ~/.config/nvim/plug-config/nerdtree.vim
 source ~/.config/nvim/plug-config/vimwiki.vim
 source ~/.config/nvim/plug-config/emmet.vim
-source ~/.config/nvim/plug-config/commentary.vim
 " source ~/.config/nvim/general/folding.vim
 " source ~/.config/nvim/scripts/mouse.vim
 " source ~/.config/nvim/general/detect.vim
