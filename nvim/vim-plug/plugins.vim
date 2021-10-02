@@ -24,7 +24,7 @@ Plug 'vimwiki/vimwiki'
 Plug 'tools-life/taskwiki'
 Plug 'plasticboy/vim-markdown'
 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'wikitopian/hardmode'
 
@@ -66,7 +66,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 Plug 'easymotion/vim-easymotion'
-" Plug 'fisadev/vim-isort'
+Plug 'fisadev/vim-isort'
 Plug 'kien/ctrlp.vim'
 " Plug 'mhinz/vim-startify'
 Plug 'mattn/calendar-vim'

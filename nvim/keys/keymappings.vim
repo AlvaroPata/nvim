@@ -38,8 +38,8 @@ nnoremap <c-u> viwU<Esc>
 
 " TAB in general mode will move to text buffer
 nnoremap <TAB> :bnext<CR>
-" SHIFT-TAB will go back
-nnoremap <S-TAB> :bprevious<CR>
+" BACKSPACE will go back
+nnoremap <BACKSPACE> :bprevious<CR>
 
 " save file from normal mode with <leader>s
 nnoremap <leader>s :w<cr>
@@ -103,7 +103,7 @@ noremap <Leader>P "+p
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
+" nnoremap <C-f> :NERDTreeFind<CR>
 
 " operator-pending mappings
 " inside function [b]ody
@@ -153,6 +153,15 @@ onoremap al" :<c-u>normal! F"va"<cr>
 
 " start Goyo
 noremap <silent> <Leader>yo :Goyo 90<bar> highlight StatusLineNC ctermfg=blue <cr>
+
+" FZF keymaps
+map <C-f> :Files<CR>
+map <leader>b :Buffers<CR>
+nnoremap <leader>g :Rg<CR>
+nnoremap <leader>m :Marks<CR>
+
+" emmet, ",," triggers emmet
+let g:user_emmet_leader_key=','
 
 augroup filetype python
     autocmd!
