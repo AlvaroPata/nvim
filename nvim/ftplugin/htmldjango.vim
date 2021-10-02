@@ -1,1 +1,1 @@
-setlocal commentstring={% comment %}\ %s\ {% endcomment %}
+setlocal commentstring={%\ comment\ %}\ %s\ {%\ endcomment\ %}
