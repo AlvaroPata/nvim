@@ -18,19 +18,23 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
+
+" Plug 'neovim/nvim-lspconfig'
+
 Plug 'sheerun/vim-polyglot'
 
 Plug 'vimwiki/vimwiki'
 Plug 'tools-life/taskwiki'
 Plug 'plasticboy/vim-markdown'
 
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'wikitopian/hardmode'
 
 " Plug 'airblade/vim-rooter'
 Plug 'preservim/nerdtree'
 
+Plug 'tommcdo/vim-lion'
 Plug 'mattn/emmet-vim'
 Plug 'Yggdroot/indentLine'
 Plug 'alvan/vim-closetag'
@@ -39,6 +43,7 @@ Plug 'honza/vim-snippets'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'vim-scripts/loremipsum'
+Plug 'tpope/vim-repeat'
 " Plug 'Konfekt/FastFold'
 " Plug 'tmhedberg/SimpylFold'
 Plug 'kana/vim-textobj-user'
@@ -56,6 +61,9 @@ Plug 'equt/paper.vim'
 
 Plug 'vim-scripts/django.vim'
 Plug 'vim-scripts/indentpython.vim'
+
+Plug 'jelera/vim-javascript-syntax'
+Plug 'leafOfTree/vim-svelte-plugin'
 
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'junegunn/gv.vim'
@@ -76,3 +84,7 @@ Plug 'junegunn/goyo.vim'
 " Plug 'karoliskoncevicius/vim-sendtowindow'
 
 call plug#end()
+
+" lua << EOF
+" require'lspconfig'.pyright.setup{}
+" EOF

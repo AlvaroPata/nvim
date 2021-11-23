@@ -52,3 +52,6 @@ au! BufWritePost $MYVIMRC source %
 
 " You can't stop me
 cmap w!! w !sudo tee %
+
+au! Filetype htmldjango setlocal commentstring={%\ comment\ %}\ %s\ {%\ endcomment\ %}
+
