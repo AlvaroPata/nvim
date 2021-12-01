@@ -155,8 +155,9 @@ onoremap al" :<c-u>normal! F"va"<cr>
 noremap <silent> <Leader>yo :Goyo 90<bar> highlight StatusLineNC ctermfg=blue <cr>
 
 " FZF keymaps
-map <C-f> :Files<CR>
-map <leader>b :Buffers<CR>
+nnoremap <leader>k :Files<CR>
+nnoremap <leader>h :History:<CR>
+nnoremap <leader>b :Buffers<CR>
 nnoremap <leader>g :Rg<CR>
 nnoremap <leader>m :Marks<CR>
 
