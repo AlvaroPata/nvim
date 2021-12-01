@@ -1,27 +1,13 @@
 {
-    "pairs.enableCharacters": [
-        "(",
-        "[",
-        "{",
-        "'",
-        "\"",
-        "`"
-    ],
-    "pairs.disableLanguages": [
-        "html",
-        "htmldjango"
-    ],
+    "pairs.enableCharacters": ["(", "[", "{", "'", "\"", "`"],
+    "pairs.disableLanguages": ["htmldjango"],
     "suggest.noselect": false,
-    "coc.preferences.formatOnSaveFiletypes": [
-        "python",
-        "json",
-        "html",
-        "htmldjango"
-    ],
+    "coc.preferences.formatOnSaveFiletypes": ["python"],
     "pyright.enable": true,
-    /* "python.linting.pylintEnabled": true, */
-    /* "python.linting.flake8Enabled": true, */
+    // "python.linting.pylintEnabled": true,
+    // "python.linting.flake8Enabled": true,
     "python.linting.flake8Args": ["--ignore=E501"],
     "python.formatting.provider": "autopep8",
-    "coc.preferences.formatOnType": true
+    "coc.preferences.formatOnType": true,
+    "svelte.enable-ts-plugin": true
 }

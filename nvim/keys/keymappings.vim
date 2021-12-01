@@ -85,8 +85,8 @@ vnoremap <leader>' c''<esc>hpl
 vnoremap <leader>" c""<esc>hpl
 
 " Comment
-nnoremap <silent> <leader>/ :Commentary<CR>
-vnoremap <silent> <leader>/ :Commentary<CR>
+" nnoremap <silent> <leader>/ :Commentary<CR>
+" vnoremap <silent> <leader>/ :Commentary<CR>
 
 " go to the BOL
 nnoremap <leader>H ^

@@ -17,12 +17,15 @@ source ~/.config/nvim/general/appearance.vim
 source ~/.config/nvim/keys/keymappings.vim
 " source ~/.config/nvim/plug-config/start-screen.vim
 source ~/.config/nvim/plug-config/fzf-config.vim
-" source ~/.config/nvim/plug-config/coc.vim
+source ~/.config/nvim/plug-config/coc.vim
 source ~/.config/nvim/plug-config/closetag.vim
 source ~/.config/nvim/plug-config/indentline.vim
 source ~/.config/nvim/plug-config/nerdtree.vim
 source ~/.config/nvim/plug-config/vimwiki.vim
 source ~/.config/nvim/plug-config/emmet.vim
+source ~/.config/nvim/plug-config/vim-prettier.vim
+source ~/.config/nvim/plug-config/context_filetype.vim
+source ~/.config/nvim/plug-config/nedcommenter.vim
 " source ~/.config/nvim/general/folding.vim
 " source ~/.config/nvim/scripts/mouse.vim
 " source ~/.config/nvim/general/detect.vim
