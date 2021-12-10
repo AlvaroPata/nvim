@@ -1,13 +1,81 @@
 {
     "pairs.enableCharacters": ["(", "[", "{", "'", "\"", "`"],
     "pairs.disableLanguages": ["htmldjango"],
+
     "suggest.noselect": false,
     "coc.preferences.formatOnSaveFiletypes": ["python"],
     "pyright.enable": true,
+
     // "python.linting.pylintEnabled": true,
     // "python.linting.flake8Enabled": true,
     "python.linting.flake8Args": ["--ignore=E501"],
     "python.formatting.provider": "autopep8",
-    "coc.preferences.formatOnType": true,
-    "svelte.enable-ts-plugin": true
+
+    "coc.preferences.formatOnType": false,
+
+    "svelte.enable-ts-plugin": true,
+    "eslint.probe": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "html",
+        "vue",
+        "markdown",
+        "svelte"
+    ],
+    "tailwindCSS.emmetCompletitions": true,
+    "tailwindCSS.runOnSave": true,
+    "tailwindCSS.jsLanguages": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "html",
+        "vue",
+        "markdown",
+        "svelte"
+    ],
+    "tailwindCSS.cssLanguages": [
+        "css",
+        "less",
+        "postess",
+        "sass",
+        "scss",
+        "stylus",
+        "vue",
+        "svelte"
+    ],
+    "tailwindCSS.htmlLanguages": [
+        "blade",
+        "edge",
+        "eelixir",
+        "ejs",
+        "elixir",
+        "elm",
+        "erb",
+        "eruby",
+        "haml",
+        "handlebars",
+        "html",
+        "htmldjango",
+        "HTML (EEx)",
+        "HTML (Eex)",
+        "html. twig",
+        "jade",
+        "leaf",
+        "markdown",
+        "njk",
+        "nunjucks",
+        "php",
+        "razor",
+        "slim",
+        "svelte",
+        "twig",
+        "vue",
+        "svelte"
+    ],
+    "eslint.options": {
+        "ignorePath": ".gitignore"
+    },
+    "eslint.lintTask.options": ["--ignore-path", ".gitignore", "."],
+    "eslint.validate": ["svelte"]
 }
