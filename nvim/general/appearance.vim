@@ -10,12 +10,9 @@
 set termguicolors
 " colorscheme neodark
 let g:tokyonight_style = 'storm'
+let g:tokyonight_enable_italic=1
+let g:tokyonight_transparent_background=1
 colorscheme tokyonight
-
-hi Normal guibg=NONE ctermbg=NONE
-hi EndOfBuffer guibg=NONE ctermbg=NONE
-hi LineNr guibg=NONE ctermbg=NONE
-hi SignColumn guibg=NONE ctermbg=NONE
 
 set cursorline
 let g:airline#extensions#tabline#enabled = 1
