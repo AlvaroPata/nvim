@@ -1,4 +1,5 @@
-require('nvim-treesitter.configs').setup {
+local configs = require"nvim-treesitter.configs"
+configs.setup {
   context_commentstring = {
     enable = true,
     enable_autocmd = false,
