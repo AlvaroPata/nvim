@@ -1,4 +1,7 @@
 return require('packer').startup(function(use)
+  -- packer
+  use {"wbthomason/packer.nvim"}
+
   -- telescope
   use 'nvim-lua/plenary.nvim'
   use 'nvim-lua/popup.nvim'
@@ -7,6 +10,26 @@ return require('packer').startup(function(use)
   -- builtin lsp
   use 'neovim/nvim-lspconfig'
   use 'williamboman/nvim-lsp-installer'
+
+  -- git
+  use {"tpope/vim-fugitive"}
+  use {"tpope/vim-rhubarb"}
+  use {"sgeb/vim-diff-fold"}
+  use {
+    "lewis6991/gitsigns.nvim",
+    config = function()
+      require "gitsigns".setup {
+        debug_mode = false,
+        signs = {
+          add = {hl = "GitGutterAdd", text = "?"},
+          change = {hl = "GitGutterChange", text = "?"},
+          delete = {hl = "GitGutterDelete", text = "_"},
+          topdelete = {hl = "GitGutterDelete", text = "?"},
+          changedelete = {hl = "GitGutterChangeDelete", text = "~"}
+        }
+      }
+    end
+  }
 
   -- treesitter
   use {
