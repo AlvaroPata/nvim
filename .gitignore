@@ -7,5 +7,6 @@ configstore/*
 nvim/autoload/*
 coc/*
 nvim/session/*
+nvim/plugin/
 karabiner/automatic_backups/*
 
