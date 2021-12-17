@@ -35,8 +35,11 @@ return require('packer').startup(function(use)
   -- statusline
   use 'shadmansaleh/lualine.nvim'
 
-  -- file manager
-  use 'tamago324/lir.nvim'
+  -- file explorer
+  use {
+      'kyazdani42/nvim-tree.lua',
+      config = function() require'nvim-tree'.setup {} end
+  }
 
   -- snippets engine
   use 'L3MON4D3/LuaSnip'
