@@ -64,4 +64,61 @@ vim.g.rose_pine_variant='moon'
 vim.cmd 'colorscheme rose-pine'
 
 -- emmet
-vim.g.user_emmet_leader_key=','
+-- vim.g.user_emmet_leader = ','
+
+-- nvim-tree
+vim.g.nvim_tree_quit_on_open = 1
+vim.g.nvim_tree_indent_markers = 1
+vim.g.nvim_tree_git_hl = 1
+vim.g.nvim_tree_highlight_opened_files = 1
+vim.g.nvim_tree_root_folder_modifier = ':~'
+vim.g.nvim_tree_add_trailing = 1
+vim.g.nvim_tree_group_empty = 1
+vim.g.nvim_tree_disable_window_picker = 1
+vim.g.nvim_tree_icon_padding = ' '
+vim.g.nvim_tree_symlink_arrow = ' >> '
+vim.g.nvim_tree_respect_buf_cwd = 1
+vim.g.nvim_tree_create_in_closed_folder = 0
+vim.g.nvim_tree_refresh_wait = 500
+vim.g.nvim_tree_window_picker_exclude = { filetype = { 'notify', 'packer', 'qf' }, buftype = { 'terminal' } }
+-- Dictionary of buffer option names mapped to a list of option values that
+-- indicates to the window picker that the buffer's window should not be
+-- selectable.
+vim.g.nvim_tree_special_files = { ['README.md']= 1, Makefile= 1, MAKEFILE= 1 }
+vim.g.nvim_tree_show_icons = {
+     git= 1,
+     folders= 0,
+     files= 0,
+     folder_arrows= 0,
+    }
+-- If 0, do not show the icons for one of 'git' 'folder' and 'files'
+-- 1 by default, notice that if 'files' is 1, it will only display
+-- if nvim-web-devicons is installed and on your runtimepath.
+-- if folder is 1, you can also tell folder_arrows 1 to show small arrows next to the folder icons.
+-- but this will not work when you set indent_markers (because of UI conflict)
+-- default will show icon by default if no icon is provided
+-- default shows no icon by default
+vim.g.nvim_tree_icons = {
+     default= '?',
+     symlink= '?',
+     git= {
+       unstaged= "?",
+       staged= "?",
+       unmerged= "?",
+       renamed= "?",
+       untracked= "?",
+       deleted= "?",
+       ignored= "?"
+       },
+     folder= {
+       arrow_open= "?",
+       arrow_closed= "?",
+       default= "?",
+       open= "?",
+       empty= "?",
+       empty_open= "?",
+       symlink= "?",
+       symlink_open= "?",
+       }
+     }
+
