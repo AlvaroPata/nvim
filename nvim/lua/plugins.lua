@@ -6,6 +6,7 @@ return require('packer').startup(function(use)
 
   -- builtin lsp
   use 'neovim/nvim-lspconfig'
+  use 'williamboman/nvim-lsp-installer'
 
   -- treesitter
   use {
