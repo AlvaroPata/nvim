@@ -87,8 +87,8 @@ vim.g.nvim_tree_window_picker_exclude = { filetype = { 'notify', 'packer', 'qf' 
 vim.g.nvim_tree_special_files = { ['README.md']= 1, Makefile= 1, MAKEFILE= 1 }
 vim.g.nvim_tree_show_icons = {
      git= 1,
-     folders= 0,
-     files= 0,
+     folders= 1,
+     files= 1,
      folder_arrows= 0,
     }
 -- If 0, do not show the icons for one of 'git' 'folder' and 'files'
@@ -98,27 +98,4 @@ vim.g.nvim_tree_show_icons = {
 -- but this will not work when you set indent_markers (because of UI conflict)
 -- default will show icon by default if no icon is provided
 -- default shows no icon by default
-vim.g.nvim_tree_icons = {
-     default= '?',
-     symlink= '?',
-     git= {
-       unstaged= "?",
-       staged= "?",
-       unmerged= "?",
-       renamed= "?",
-       untracked= "?",
-       deleted= "?",
-       ignored= "?"
-       },
-     folder= {
-       arrow_open= "?",
-       arrow_closed= "?",
-       default= "?",
-       open= "?",
-       empty= "?",
-       empty_open= "?",
-       symlink= "?",
-       symlink_open= "?",
-       }
-     }
 
