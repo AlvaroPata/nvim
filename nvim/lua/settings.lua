@@ -62,3 +62,6 @@ opt.shortmess:append('c')
 -- colorscheme
 vim.g.rose_pine_variant='moon'
 vim.cmd 'colorscheme rose-pine'
+
+-- emmet
+vim.g.user_emmet_leader_key=','
