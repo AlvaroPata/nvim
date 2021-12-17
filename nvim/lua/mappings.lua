@@ -168,11 +168,16 @@ onoremap('al"', ':<c-u>normal! F"va"<cr>')
 -- start Goyo
 nnoremap('<Leader>yo', ':Goyo 90<bar> highlight StatusLineNC ctermfg=blue <cr>')
 
--- FZF keymaps
-nnoremap('<leader>k', ':Files<CR>')
-nnoremap('<leader>h', ':History:<CR>')
-nnoremap('<leader>b', ':Buffers<CR>')
-nnoremap('<leader>g', ':Rg<CR>')
-nnoremap('<leader>m', ':Marks<CR>')
+-- telescope keymaps
+nnoremap('<leader>k', ":lua require('telescope.builtin').find_files()<CR>")
+nnoremap('<leader>h', ":lua require('telescope.builtin').command_history()<CR>")
+nnoremap('<leader>b', ":lua require('telescope.builtin').buffers()<CR>")
+nnoremap('<leader>g', ":lua require('telescope.builtin').live_grep()<CR>")
+nnoremap('<leader>m', ":lua require('telescope.builtin').marks()<CR>")
+
+-- nvim-tree keymaps
+nnoremap("<leader>n", ":NvimTreeToggle<CR>")
+-- NvimTreeRefresh, NvimFindFile, NvimTreeOpen, NvimTreeClose, NvimTreeFocus,
+-- NvimTreeFindFileToggle, and NvimTreeResize are also available if you need'em
 
 
