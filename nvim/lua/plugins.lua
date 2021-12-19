@@ -56,6 +56,9 @@ return require('packer').startup(function(use)
   -- nerd font icons :D
   use 'kyazdani42/nvim-web-devicons'
 
+  -- use icons in the completion menus for lsp suggestions
+  use 'onsails/lspkind-nvim'
+
   -- statusline
   use { 'nvim-lualine/lualine.nvim',
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
@@ -77,7 +80,6 @@ return require('packer').startup(function(use)
   use {
     'folke/trouble.nvim',
     config = function() require'trouble'.setup{} end
-
   }
 
   -- vimscript plugins
