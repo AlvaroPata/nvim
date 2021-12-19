@@ -21,10 +21,10 @@ return require('packer').startup(function(use)
       require "gitsigns".setup {
         debug_mode = false,
         signs = {
-          add          = {hl = 'GitSignsAdd'   , text = '?', numhl='GitSignsAddNr'   , linehl='GitSignsAddLn'},
-          change       = {hl = 'GitSignsChange', text = '?', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn'},
+          add          = {hl = 'GitSignsAdd'   , text = '│', numhl='GitSignsAddNr'   , linehl='GitSignsAddLn'},
+          change       = {hl = 'GitSignsChange', text = '│', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn'},
           delete       = {hl = 'GitSignsDelete', text = '_', numhl='GitSignsDeleteNr', linehl='GitSignsDeleteLn'},
-          topdelete    = {hl = 'GitSignsDelete', text = '?', numhl='GitSignsDeleteNr', linehl='GitSignsDeleteLn'},
+          topdelete    = {hl = 'GitSignsDelete', text = '‾', numhl='GitSignsDeleteNr', linehl='GitSignsDeleteLn'},
           changedelete = {hl = 'GitSignsChange', text = '~', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn'},
         },
       }
@@ -74,7 +74,11 @@ return require('packer').startup(function(use)
   use 'rose-pine/neovim'
 
   -- lsp diagnostics
-  use 'folke/trouble.nvim'
+  use {
+    'folke/trouble.nvim',
+    config = function() require'trouble'.setup{} end
+
+  }
 
   -- vimscript plugins
   use 'milisims/nvim-luaref'
