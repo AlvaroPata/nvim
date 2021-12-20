@@ -1,4 +1,5 @@
 gcloud/*
+base16-shell
 gh/*
 htop/*
 dask/*
