@@ -4,8 +4,8 @@ local o = vim.o
 
 -- settings
 vim.cmd [[
-syntax on
-filetype plugin indent on
+  syntax on
+  filetype plugin indent on
 ]]
 vim.g.mapleader = ' '
 vim.g.vimsyn_embed = 'lPr'
@@ -24,6 +24,7 @@ o.expandtab = true
 o.fileencoding = 'utf-8'
 o.foldmethod = 'manual'
 o.hidden = true
+o.hls = false
 o.ignorecase = true
 o.inccommand = 'split'
 o.incsearch = true
