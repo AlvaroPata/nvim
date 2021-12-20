@@ -25,8 +25,7 @@ nnoremap('<leader>hl', ':nohlsearch<cr>')
 tnoremap('<esc>', [[<c-\><c-n>]])
 
 -- swap between light and dark themes for rose-pine (Toggle Theme)
-nnoremap('<leader>tt', [[<cmd>lua require('rose-pine.functions').toggle_variant({ 'moon', 'dawn' })<cr>]])
-
+nnoremap('<leader>tt', [[<cmd>lua require('rose-pine').toggle()<cr>]])
 
 -- Better nav for omnicomplete
 -- inoremap('<expr>', '<c-j> ("\<C-n>")')
@@ -176,8 +175,10 @@ nnoremap('<leader>g', ":lua require('telescope.builtin').live_grep()<CR>")
 nnoremap('<leader>m', ":lua require('telescope.builtin').marks()<CR>")
 
 -- nvim-tree keymaps
-nnoremap("<leader>n", ":NvimTreeToggle<CR>")
--- NvimTreeRefresh, NvimFindFile, NvimTreeOpen, NvimTreeClose, NvimTreeFocus,
--- NvimTreeFindFileToggle, and NvimTreeResize are also available if you need'em
+nnoremap('<leader>n', ':NvimTreeToggle<CR>')
 
-
+-- barbar keymaps
+nnoremap('<leader>,', ':BufferLineCyclePrev<cr>')
+nnoremap('<leader>.', ':BufferLineCycleNext<cr>')
+nnoremap('<leader><leader>,', ':BufferLineMovePrev<CR>')
+nnoremap('<leader><leader>.', ' :BufferLineMoveNext<CR>')

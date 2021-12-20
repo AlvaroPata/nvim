@@ -61,7 +61,8 @@ opt.iskeyword:append('-')
 opt.shortmess:append('c')
 
 -- colorscheme
-vim.g.rose_pine_variant='moon'
+vim.g.rose_pine_variant=''
+vim.g.rose_pine_disable_background = true
 vim.cmd 'colorscheme rose-pine'
 
 -- emmet

@@ -1,6 +1,7 @@
 -- plugin modules used in this file
 local cmp = require 'cmp'
-local lspkind = require'lspkind'
+local lspkind = require 'lspkind'
+local cmp_autopairs = require 'nvim-autopairs.completion.cmp'
 
 -- setup nvim-cmp
 cmp.setup {
@@ -9,22 +10,22 @@ cmp.setup {
   },
   snippet = {
     expand = function(args)
-      require'luasnip'.lsp_expand(args.body)
+      require('luasnip').lsp_expand(args.body)
     end,
   },
   formatting = {
-    format = lspkind.cmp_format({
+    format = lspkind.cmp_format {
       with_text = true,
       maxwidth = math.floor(vim.api.nvim_win_get_width(0) / 2),
       maxheight = math.floor(vim.api.nvim_win_get_height(0) / 3 * 2),
-      menu = ({
+      menu = {
         buffer = '[buf]',
         nvim_lsp = '[lsp]',
         luasnip = '[snip]',
         nvim_lua = '[lua]',
         latex_symbols = '[latex]',
-      }),
-    }),
+      },
+    },
   },
   mapping = {
     ['<c-p>'] = cmp.mapping.select_prev_item(),
@@ -40,7 +41,7 @@ cmp.setup {
     ['<tab>'] = function(fallback)
       if vim.fn.pumvisible() == 1 then
         vim.fn.feedkeys(vim.api.nvim_replace_termcodes('<c-k>', true, true, true))
-      -- elseif require'luasnip'.expand_or_jumpable() then
+        -- elseif require'luasnip'.expand_or_jumpable() then
         -- vim.fn.feedkeys(vim.api.nvim_replace_termcodes('<plug>luasnip-expand-or-jump', true, true, true), '')
       else
         fallback()
@@ -49,7 +50,7 @@ cmp.setup {
     ['<s-tab>'] = function(fallback)
       if vim.fn.pumvisible() == 1 then
         vim.fn.feedkeys(vim.api.nvim_replace_termcodes('<c-p>', true, true, true), 'n')
-      -- elseif require'luasnip'.jumpable(-1) then
+        -- elseif require'luasnip'.jumpable(-1) then
         -- vim.fn.feedkeys(vim.api.nvim_replace_termcodes('<plug>luasnip-jump-prev', true, true, true), '')
       else
         fallback()
@@ -72,5 +73,9 @@ cmp.setup {
     ghost_text = {
       hl_group = 'CmpGhostText',
     },
-  }
+  },
 }
+
+-- autopairs
+cmp.event:on('confirm_done', cmp_autopairs.on_confirm_done { map_char = { tex = '' } })
+cmp_autopairs.lisp[#cmp_autopairs.lisp + 1] = 'racket'

@@ -45,7 +45,11 @@ return require('packer').startup(function(use)
   use 'saadparwaiz1/cmp_luasnip'
 
   -- comments
-  use 'numToStr/Comment.nvim'
+  use {'numToStr/Comment.nvim',
+    config = function()
+      require('Comment').setup()
+    end
+  }
 
   -- comments integration with treesitter
   use 'JoosepAlviste/nvim-ts-context-commentstring'
@@ -64,11 +68,26 @@ return require('packer').startup(function(use)
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
   }
 
+
+  -- buffer bar
+  use {
+    'akinsho/bufferline.nvim',
+    requires = 'kyazdani42/nvim-web-devicons',
+    config = function() require'bufferline'.setup {} end
+  }
+
   -- file explorer
   use {
       'kyazdani42/nvim-tree.lua',
       config = function() require'nvim-tree'.setup {} end
   }
+
+  use {
+    'windwp/nvim-autopairs',
+    config = function () require'nvim-autopairs'.setup {} end
+  }
+
+  use 'mhartington/formatter.nvim'
 
   -- snippets engine
   use 'L3MON4D3/LuaSnip'
@@ -84,7 +103,6 @@ return require('packer').startup(function(use)
 
   -- vimscript plugins
   use 'milisims/nvim-luaref'
-  use 'tpope/vim-surround'
   use 'tpope/vim-repeat'
   use 'christoomey/vim-system-copy'
 end)
