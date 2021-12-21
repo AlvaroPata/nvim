@@ -10,7 +10,6 @@ vim.cmd [[
 vim.g.mapleader = ' '
 vim.g.vimsyn_embed = 'lPr'
 
-
 o.autoindent = true
 o.autoread = true
 o.clipboard = 'unnamedplus'
@@ -35,17 +34,17 @@ o.number = true
 o.path = '.,**'
 o.relativenumber = true
 o.scrolloff = 8
-o.shiftwidth=2
+o.shiftwidth = 2
 o.showmode = false
 o.showtabline = 1
 o.signcolumn = 'yes'
 o.smartcase = true
 o.smartindent = true
-o.softtabstop=2
+o.softtabstop = 2
 o.splitbelow = true
 o.splitright = true
 o.swapfile = false
-o.tabstop=2
+o.tabstop = 2
 o.termguicolors = true
 o.timeoutlen = 500
 o.updatetime = 300
@@ -55,13 +54,13 @@ o.wildmode = 'full'
 o.wildoptions = 'pum'
 o.wrap = false
 o.writebackup = false
-opt.formatoptions:append('jnrql')
-opt.formatoptions:remove('2tac')
-opt.iskeyword:append('-')
-opt.shortmess:append('c')
+opt.formatoptions:append 'jnrql'
+opt.formatoptions:remove '2tac'
+opt.iskeyword:append '-'
+opt.shortmess:append 'c'
 
 -- colorscheme
-vim.g.rose_pine_variant=''
+vim.g.rose_pine_variant = ''
 vim.g.rose_pine_disable_background = true
 vim.cmd 'colorscheme rose-pine'
 
@@ -86,18 +85,10 @@ vim.g.nvim_tree_window_picker_exclude = { filetype = { 'notify', 'packer', 'qf' 
 -- Dictionary of buffer option names mapped to a list of option values that
 -- indicates to the window picker that the buffer's window should not be
 -- selectable.
-vim.g.nvim_tree_special_files = { ['README.md']= 1, Makefile= 1, MAKEFILE= 1 }
+vim.g.nvim_tree_special_files = { ['README.md'] = 1, Makefile = 1, MAKEFILE = 1 }
 vim.g.nvim_tree_show_icons = {
-     git= 1,
-     folders= 1,
-     files= 1,
-     folder_arrows= 0,
-    }
--- If 0, do not show the icons for one of 'git' 'folder' and 'files'
--- 1 by default, notice that if 'files' is 1, it will only display
--- if nvim-web-devicons is installed and on your runtimepath.
--- if folder is 1, you can also tell folder_arrows 1 to show small arrows next to the folder icons.
--- but this will not work when you set indent_markers (because of UI conflict)
--- default will show icon by default if no icon is provided
--- default shows no icon by default
-
+  git = 1,
+  folders = 1,
+  files = 1,
+  folder_arrows = 0,
+}

@@ -1,6 +1,6 @@
 return require('packer').startup(function(use)
   -- packer
-  use {"wbthomason/packer.nvim"}
+  use { 'wbthomason/packer.nvim' }
 
   -- telescope
   use 'nvim-lua/plenary.nvim'
@@ -12,23 +12,28 @@ return require('packer').startup(function(use)
   use 'williamboman/nvim-lsp-installer'
 
   -- git
-  use {"tpope/vim-fugitive"}
-  use {"tpope/vim-rhubarb"}
-  use {"sgeb/vim-diff-fold"}
+  use { 'tpope/vim-fugitive' }
+  use { 'tpope/vim-rhubarb' }
+  use { 'sgeb/vim-diff-fold' }
   use {
-    "lewis6991/gitsigns.nvim",
+    'lewis6991/gitsigns.nvim',
     config = function()
-      require "gitsigns".setup {
+      require('gitsigns').setup {
         debug_mode = false,
         signs = {
-          add          = {hl = 'GitSignsAdd'   , text = '│', numhl='GitSignsAddNr'   , linehl='GitSignsAddLn'},
-          change       = {hl = 'GitSignsChange', text = '│', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn'},
-          delete       = {hl = 'GitSignsDelete', text = '_', numhl='GitSignsDeleteNr', linehl='GitSignsDeleteLn'},
-          topdelete    = {hl = 'GitSignsDelete', text = '‾', numhl='GitSignsDeleteNr', linehl='GitSignsDeleteLn'},
-          changedelete = {hl = 'GitSignsChange', text = '~', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn'},
+          add = { hl = 'GitSignsAdd', text = '│', numhl = 'GitSignsAddNr', linehl = 'GitSignsAddLn' },
+          change = { hl = 'GitSignsChange', text = '│', numhl = 'GitSignsChangeNr', linehl = 'GitSignsChangeLn' },
+          delete = { hl = 'GitSignsDelete', text = '_', numhl = 'GitSignsDeleteNr', linehl = 'GitSignsDeleteLn' },
+          topdelete = { hl = 'GitSignsDelete', text = '‾', numhl = 'GitSignsDeleteNr', linehl = 'GitSignsDeleteLn' },
+          changedelete = {
+            hl = 'GitSignsChange',
+            text = '~',
+            numhl = 'GitSignsChangeNr',
+            linehl = 'GitSignsChangeLn',
+          },
         },
       }
-    end
+    end,
   }
 
   -- treesitter
@@ -45,10 +50,11 @@ return require('packer').startup(function(use)
   use 'saadparwaiz1/cmp_luasnip'
 
   -- comments
-  use {'numToStr/Comment.nvim',
+  use {
+    'numToStr/Comment.nvim',
     config = function()
       require('Comment').setup()
-    end
+    end,
   }
 
   -- comments integration with treesitter
@@ -64,27 +70,30 @@ return require('packer').startup(function(use)
   use 'onsails/lspkind-nvim'
 
   -- statusline
-  use { 'nvim-lualine/lualine.nvim',
-    requires = {'kyazdani42/nvim-web-devicons', opt = true}
-  }
-
+  use { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } }
 
   -- buffer bar
   use {
     'akinsho/bufferline.nvim',
     requires = 'kyazdani42/nvim-web-devicons',
-    config = function() require'bufferline'.setup {} end
+    config = function()
+      require('bufferline').setup {}
+    end,
   }
 
   -- file explorer
   use {
-      'kyazdani42/nvim-tree.lua',
-      config = function() require'nvim-tree'.setup {} end
+    'kyazdani42/nvim-tree.lua',
+    config = function()
+      require('nvim-tree').setup {}
+    end,
   }
 
   use {
     'windwp/nvim-autopairs',
-    config = function () require'nvim-autopairs'.setup {} end
+    config = function()
+      require('nvim-autopairs').setup {}
+    end,
   }
 
   use 'mhartington/formatter.nvim'
@@ -98,10 +107,15 @@ return require('packer').startup(function(use)
   -- lsp diagnostics
   use {
     'folke/trouble.nvim',
-    config = function() require'trouble'.setup{} end
+    config = function()
+      require('trouble').setup {}
+    end,
   }
 
   -- vimscript plugins
+  use {
+    'stsewd/isort.nvim',
+  }
   use 'milisims/nvim-luaref'
   use 'tpope/vim-repeat'
   use 'christoomey/vim-system-copy'
