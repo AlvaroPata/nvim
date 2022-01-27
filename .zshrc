@@ -1,3 +1,8 @@
+
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the start of this file.
+[ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
+#### END FIG ENV VARIABLES ####
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -145,6 +150,9 @@ export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
 # Using Vim mode
 bindkey -v
+# Use vim to edit command
+bindkey '^x^x' edit-command-line
+
 # press Alt+a for fzf cd
 bindkey "å" fzf-cd-widget
 
@@ -190,3 +198,11 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Use ipdb as the default debugging tool for Python breakpoint
+export PYTHONBREAKPOINT=ipdb.set_trace
+
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the end of this file.
+[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
+#### END FIG ENV VARIABLES ####
