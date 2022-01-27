@@ -99,7 +99,10 @@ return require('packer').startup(function(use)
   use 'mhartington/formatter.nvim'
 
   -- snippets engine
-  use 'L3MON4D3/LuaSnip'
+  -- use 'L3MON4D3/LuaSnip'
+
+  -- snippets library
+  -- use 'AlvaroPata/friendly-snippets'
 
   -- theme
   use 'rose-pine/neovim'
@@ -113,10 +116,9 @@ return require('packer').startup(function(use)
   }
 
   -- vimscript plugins
-  use {
-    'stsewd/isort.nvim',
-  }
+  use 'stsewd/isort.nvim'
   use 'milisims/nvim-luaref'
   use 'tpope/vim-repeat'
   use 'christoomey/vim-system-copy'
+  use 'vimwiki/vimwiki'
 end)
