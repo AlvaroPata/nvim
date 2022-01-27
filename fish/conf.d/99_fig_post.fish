@@ -1,0 +1,1 @@
+/Users/alephpei/.fig/shell/post.fish
