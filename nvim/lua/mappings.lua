@@ -37,11 +37,8 @@ nnoremap('<leader>tt', [[<cmd>lua require('rose-pine').toggle()<cr>]])
 -- nnoremap('<M-h>', '   :vertical resize -2<CR>')
 -- nnoremap('<M-l>', '   :vertical resize +2<CR>')
 
--- Escape insert mode and add new line below with jkl
-inoremap('JK', '<esc>o')
-
 -- close buffer from normal mode with jk
-nnoremap('JK', ':bd<cr>')
+nnoremap('NE', ':bd<cr>')
 
 --[[
 " Easy CAPS
