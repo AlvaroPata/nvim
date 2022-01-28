@@ -10,6 +10,9 @@
 --                      |  $$$$$$/
 --                       \______/
 
+nnoremap('<SPACE>', '<Nop>')
+vim.g.mapleader = ' '
+
 -- remap Y to yank to end of line
 nnoremap('Y', 'y$')
 vnoremap('Y', 'y$')
@@ -77,6 +80,10 @@ nnoremap('<C-l>', '<C-w>l')
 nnoremap('<Leader>o', 'o<Esc>^Da')
 nnoremap('<Leader>O', 'O<Esc>^Da')
 
+-- make search use normal PERL regex
+nnoremap('/', '/\v')
+vnoremap('/', '/\v')
+
 -- edit .vimrc
 nnoremap('<leader>v', ':vsplit $MYVIMRC<cr>')
 
@@ -108,12 +115,6 @@ nnoremap('<Leader>y', '"*y')
 nnoremap('<Leader>p', '"*p')
 nnoremap('<Leader>Y', '"+y')
 nnoremap('<Leader>P', '"+p')
-
--- nerdtree mappings
-nnoremap('<leader>n', ':NERDTreeFocus<CR>')
-nnoremap('<C-n>', ':NERDTree<CR>')
-nnoremap('<C-t>', ':NERDTreeToggle<CR>')
--- nnoremap('<C-f>', ':NERDTreeFind<CR>')
 
 -- operator-pending mappings
 -- inside function [b]ody
