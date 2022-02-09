@@ -22,6 +22,25 @@ local filetype_configs = {
       }
     end,
   },
+  python = {
+    function()
+      return {
+        exe = 'black',
+        args = { '_' },
+        stdin = true,
+      }
+    end,
+    function()
+      return {
+        exe = 'python3 -m autopep8',
+        args = {
+          '--in-place --aggressive --aggressive',
+          vim.fn.fnameescape(vim.api.nvim_buf_get_name(0)),
+        },
+        stdin = false,
+      }
+    end,
+  },
 }
 
 -- configuration options for prettier
@@ -67,6 +86,6 @@ require('formatter').setup {
 vim.cmd [[
 augroup AutoFormatting
   au!
-  au BufWritePost *.js,*.jsx,*.ts,*.tsx,*.svelte,*.vue,*.lua,*.go FormatWrite
+  au BufWritePost *.py,*.js,*.jsx,*.ts,*.tsx,*.svelte,*.vue,*.lua,*.go FormatWrite
 augroup END
 ]]
