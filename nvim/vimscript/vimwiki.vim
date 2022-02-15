@@ -18,6 +18,7 @@ let g:vimwiki_list = [
       \ {'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'},
       \ {'path': '~/vimwiki/tech', 'syntax': 'markdown', 'ext': '.md'},
       \ {'path': '~/vimwiki/business', 'syntax': 'markdown', 'ext': '.md'},
+      \ {'path': '~/vimwiki/LeWagon', 'syntax': 'markdown', 'ext': '.md'},
       \]
 
 let g:vimwiki_markdown_link_ext = 1
