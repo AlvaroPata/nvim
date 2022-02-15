@@ -133,6 +133,7 @@ alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias vim=nvim
 alias runs="python manage.py runserver"
 alias djs="python manage.py shell -i ipython"
+alias posh="poetry shell"
 
 # Pyenv
 eval "$(pyenv init -)"
