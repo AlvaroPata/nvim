@@ -55,9 +55,9 @@ nnoremap('<BACKSPACE>', ':bprevious<CR>')
 --]]
 
 -- save file from normal mode with <leader>s
-nnoremap('<leader>s', ':w<cr>')
+nnoremap('<leader>s', ':up<cr>')
 -- Alternate way to save
-nnoremap('<C-s>', ':w<CR>')
+nnoremap('<C-s>', ':up<CR>')
 -- Alternate way to quit
 nnoremap('<C-Q>', ':wq!<CR>')
 -- Use control-c instead of escape
@@ -81,8 +81,8 @@ nnoremap('<Leader>o', 'o<Esc>^Da')
 nnoremap('<Leader>O', 'O<Esc>^Da')
 
 -- make search use normal PERL regex
-nnoremap('/', '/\v')
-vnoremap('/', '/\v')
+-- nnoremap('/', '/\v')
+-- vnoremap('/', '/\v')
 
 -- edit .vimrc
 nnoremap('<leader>v', ':vsplit $MYVIMRC<cr>')
@@ -180,3 +180,6 @@ nnoremap('<leader>,', ':BufferLineCyclePrev<cr>')
 nnoremap('<leader>.', ':BufferLineCycleNext<cr>')
 nnoremap('<leader><leader>,', ':BufferLineMovePrev<CR>')
 nnoremap('<leader><leader>.', ' :BufferLineMoveNext<CR>')
+
+-- emmet
+vim.g.user_emmet_leader_key = ','
