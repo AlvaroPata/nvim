@@ -10,4 +10,4 @@ coc/*
 nvim/session/*
 nvim/plugin/
 karabiner/automatic_backups/*
-
+nvim/pack/
