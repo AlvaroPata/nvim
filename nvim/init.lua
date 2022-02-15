@@ -30,7 +30,7 @@ require 'plugin_configs'
 cmd 'runtime! vimscript/**'
 
 -- colorscheme
-vim.g.rose_pine_disable_background = true
+vim.g.disable_background = true
 -- set my colorscheme to the correct varient depending on whether it's between
 -- 9am-5pm or not
 -- local current_hour = tonumber(vim.fn.strftime '%H')
