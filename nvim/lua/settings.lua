@@ -7,7 +7,6 @@ vim.cmd [[
   syntax on
   filetype plugin indent on
 ]]
-vim.g.mapleader = ' '
 vim.g.vimsyn_embed = 'lPr'
 
 o.autoindent = true
@@ -58,9 +57,6 @@ opt.formatoptions:append 'jnrql'
 opt.formatoptions:remove '2tac'
 opt.iskeyword:append '-'
 opt.shortmess:append 'c'
-
--- emmet
--- vim.g.user_emmet_leader = ','
 
 -- nvim-tree
 vim.g.nvim_tree_quit_on_open = 1
