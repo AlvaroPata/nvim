@@ -99,7 +99,7 @@ return require('packer').startup(function(use)
   use 'mhartington/formatter.nvim'
 
   -- snippets engine
-  -- use 'L3MON4D3/LuaSnip'
+  use 'L3MON4D3/LuaSnip'
 
   -- snippets library
   -- use 'AlvaroPata/friendly-snippets'
@@ -121,4 +121,5 @@ return require('packer').startup(function(use)
   use 'tpope/vim-repeat'
   use 'christoomey/vim-system-copy'
   use 'vimwiki/vimwiki'
+  use 'mattn/emmet-vim'
 end)
