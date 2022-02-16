@@ -116,9 +116,10 @@ return require('packer').startup(function(use)
   }
 
   -- vimscript plugins
-  use 'stsewd/isort.nvim'
+  use 'brentyi/isort.vim'
   use 'milisims/nvim-luaref'
   use 'tpope/vim-repeat'
+  use 'tpope/vim-surround'
   use 'christoomey/vim-system-copy'
   use 'vimwiki/vimwiki'
   use 'mattn/emmet-vim'

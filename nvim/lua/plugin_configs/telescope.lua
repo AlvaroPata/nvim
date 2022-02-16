@@ -4,8 +4,8 @@ require('telescope').setup {
     mappings = {
       i = {
         ['<esc>'] = actions.close,
-        ['<C-j>'] = actions.move_selection_next,
-        ['<C-k>'] = actions.move_selection_previous,
+        ['<C-n>'] = actions.move_selection_next,
+        ['<C-e>'] = actions.move_selection_previous,
       },
     },
   },
