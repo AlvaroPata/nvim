@@ -52,9 +52,10 @@ cmp.setup {
   },
   experimental = {
     native_menu = false,
-    ghost_text = {
-      hl_group = 'CmpGhostText',
-    },
+    ghost_text = false,
+    -- {
+    --   hl_group = 'CmpGhostText',
+    -- },
   },
 }
 
