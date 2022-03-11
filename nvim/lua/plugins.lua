@@ -82,12 +82,7 @@ return require('packer').startup(function(use)
   }
 
   -- file explorer
-  use {
-    'kyazdani42/nvim-tree.lua',
-    config = function()
-      require('nvim-tree').setup {}
-    end,
-  }
+  use 'kyazdani42/nvim-tree.lua'
 
   use {
     'windwp/nvim-autopairs',
@@ -102,7 +97,7 @@ return require('packer').startup(function(use)
   use 'L3MON4D3/LuaSnip'
 
   -- snippets library
-  -- use 'AlvaroPata/friendly-snippets'
+  use 'rafamadriz/friendly-snippets'
 
   -- theme
   use 'rose-pine/neovim'

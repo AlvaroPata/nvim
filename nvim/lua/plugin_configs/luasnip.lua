@@ -45,9 +45,25 @@ _G.s_tab_complete = function()
   return ''
 end
 
+luasnip.config.set_config {
+  -- This tells LuaSnip to remember to keep around the last snippet.
+  -- You can jump back into it even if you move outside of the selection.
+  history = true,
+
+  -- This one is cool cause if you have dynamic snippets, it updates as you type!
+  updateevents = 'TextChanged,TextChangedI',
+
+  -- Autosnippets:
+  enable_autosnippets = true,
+}
+
+require('luasnip.loaders.from_vscode').lazy_load()
+
 vim.api.nvim_set_keymap('i', '<Tab>', 'v:lua.tab_complete()', { expr = true })
 vim.api.nvim_set_keymap('s', '<Tab>', 'v:lua.tab_complete()', { expr = true })
 vim.api.nvim_set_keymap('i', '<S-Tab>', 'v:lua.s_tab_complete()', { expr = true })
 vim.api.nvim_set_keymap('s', '<S-Tab>', 'v:lua.s_tab_complete()', { expr = true })
 vim.api.nvim_set_keymap('i', '<C-E>', '<Plug>luasnip-next-choice', {})
 vim.api.nvim_set_keymap('s', '<C-E>', '<Plug>luasnip-next-choice', {})
+
+luasnip.filetype_extend('python', { 'django' })
