@@ -49,6 +49,8 @@ return require('packer').startup(function(use)
     end,
   }
 
+  use 'github/copilot.vim'
+
   -- treesitter
   use {
     'nvim-treesitter/nvim-treesitter',
@@ -131,4 +133,5 @@ return require('packer').startup(function(use)
   use 'christoomey/vim-system-copy'
   use 'vimwiki/vimwiki'
   use 'mattn/emmet-vim'
+  use 'rhysd/vim-grammarous'
 end)

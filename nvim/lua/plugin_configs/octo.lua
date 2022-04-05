@@ -1,5 +1,5 @@
 require('octo').setup {
-  default_remote = { 'upstream', 'origin' }, -- order to try remotes
+  default_remote = { 'origin', 'upstream' }, -- order to try remotes
   reaction_viewer_hint_icon = '?', -- marker for user reactions
   user_icon = '? ', -- user icon
   timeline_marker = '?', -- timeline marker
@@ -10,7 +10,7 @@ require('octo').setup {
   snippet_context_lines = 4, -- number or lines around commented lines
   file_panel = {
     size = 10, -- changed files panel rows
-    use_icons = true,                       -- use web-devicons in file panel
+    use_icons = true, -- use web-devicons in file panel
   },
   mappings = {
     issue = {
