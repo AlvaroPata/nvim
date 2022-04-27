@@ -1,4 +1,4 @@
-local configs = require"nvim-treesitter.configs"
+local configs = require 'nvim-treesitter.configs'
 configs.setup {
   context_commentstring = {
     enable = true,
@@ -10,5 +10,17 @@ configs.setup {
   indent = {
     enable = true,
   },
-  ensure_installed = 'maintained',
+  ensure_installed = {
+    'python',
+    'javascript',
+    'typescript',
+    'html',
+    'css',
+    'json',
+    'bash',
+    'regex',
+    'scss',
+    'vim',
+    'svelte',
+  },
 }
