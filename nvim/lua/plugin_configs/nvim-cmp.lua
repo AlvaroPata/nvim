@@ -5,8 +5,10 @@ local cmp_autopairs = require 'nvim-autopairs.completion.cmp'
 
 -- setup nvim-cmp
 cmp.setup {
-  documentation = {
-    border = 'double',
+  window = {
+    documentation = {
+      border = 'double',
+    },
   },
   snippet = {
     expand = function(args)
