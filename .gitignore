@@ -12,3 +12,5 @@ nvim/plugin/
 karabiner/automatic_backups/*
 nvim/pack/
 node_modules/
+planetscale
+github-copilot
