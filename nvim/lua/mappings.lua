@@ -183,3 +183,6 @@ nnoremap('<leader><leader>.', ' :BufferLineMoveNext<CR>')
 
 -- emmet
 vim.g.user_emmet_leader_key = ','
+
+-- RestNvim
+nnoremap('<leader>r', ':lua require("rest-nvim").run()<CR>')
