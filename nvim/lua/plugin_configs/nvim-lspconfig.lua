@@ -1,4 +1,4 @@
-local lspconfig = require 'lspconfig'
+--[[ local lspconfig = require 'lspconfig'
 local configs = require 'lspconfig.configs'
 
 -- Use an on_attach function to only map the following keys
@@ -91,4 +91,4 @@ configs.emmet_ls = {
     settings = {},
   },
 }
-lspconfig.emmet_ls.setup { capabilities = capabilities }
+lspconfig.emmet_ls.setup { capabilities = capabilities } ]]
