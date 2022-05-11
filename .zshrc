@@ -131,6 +131,7 @@ alias vim=nvim
 alias runs="python manage.py runserver"
 alias djs="python manage.py shell -i ipython"
 alias posh="poetry shell"
+alias bubu="brew update && brew upgrade"
 
 # Pyenv
 eval "$(pyenv init -)"
