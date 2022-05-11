@@ -14,6 +14,10 @@ return require('packer').startup(function(use)
   -- ejs
   use 'nikvdp/ejs-syntax'
 
+  -- TypeScript
+  use 'jose-elias-alvarez/null-ls.nvim'
+  use 'jose-elias-alvarez/nvim-lsp-ts-utils'
+
   -- git
   use { 'tpope/vim-fugitive' }
   use { 'tpope/vim-rhubarb' }
