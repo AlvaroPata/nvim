@@ -1,7 +1,6 @@
 -- plugin modules used in this file
 local cmp = require 'cmp'
 local lspkind = require 'lspkind'
-local cmp_autopairs = require 'nvim-autopairs.completion.cmp'
 
 -- setup nvim-cmp
 cmp.setup {
@@ -55,12 +54,5 @@ cmp.setup {
   experimental = {
     native_menu = false,
     ghost_text = false,
-    -- {
-    --   hl_group = 'CmpGhostText',
-    -- },
   },
 }
-
--- autopairs
-cmp.event:on('confirm_done', cmp_autopairs.on_confirm_done { map_char = { tex = '' } })
-cmp_autopairs.lisp[#cmp_autopairs.lisp + 1] = 'racket'
