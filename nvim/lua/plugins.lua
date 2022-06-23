@@ -95,17 +95,15 @@ return require('packer').startup(function(use)
   use { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } }
 
   -- buffer bar
-  use {
-    'akinsho/bufferline.nvim',
-    requires = 'kyazdani42/nvim-web-devicons',
-    config = function()
-      require('bufferline').setup {}
-    end,
-  }
+  use { 'akinsho/bufferline.nvim', tag = 'v2.*', requires = 'kyazdani42/nvim-web-devicons' }
+
+  -- toggleterm
+  use { 'akinsho/toggleterm.nvim', tag = 'v1.*' }
 
   -- file explorer
   use 'kyazdani42/nvim-tree.lua'
 
+  -- autopairs
   use {
     'windwp/nvim-autopairs',
     config = function()
@@ -120,6 +118,9 @@ return require('packer').startup(function(use)
 
   -- snippets library
   use 'rafamadriz/friendly-snippets'
+
+  -- lion
+  use 'tommcdo/vim-lion'
 
   -- theme
   use 'rose-pine/neovim'
