@@ -49,12 +49,12 @@ local prettier_config = {
     return {
       exe = 'prettier',
       args = {
+        '--config-precedence',
+        'prefer-file',
+        '--print-width',
+        vim.bo.textwidth,
         '--stdin-filepath',
         vim.fn.fnameescape(vim.api.nvim_buf_get_name(0)),
-        '--single-quote',
-        '--tab-width 4',
-        '--trailing-comma all',
-        '--jsx-single-quote',
       },
       stdin = true,
     }
@@ -62,19 +62,17 @@ local prettier_config = {
 }
 
 -- add a prettier_config for all js/ts/vue/svelte filetypes
-for _, ft in
-  pairs {
-    'javascript',
-    'javascriptreact',
-    'typescript',
-    'typescriptreact',
-    'svelte',
-    'vue',
-    'html',
-    'css',
-    'astro',
-  }
-do
+for _, ft in pairs {
+  'javascript',
+  'javascriptreact',
+  'typescript',
+  'typescriptreact',
+  'svelte',
+  'vue',
+  'html',
+  'css',
+  'astro',
+} do
   filetype_configs[ft] = prettier_config
 end
 
