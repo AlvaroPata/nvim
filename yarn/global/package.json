@@ -1,10 +1,11 @@
 {
   "dependencies": {
     "@vitejs/create-app": "^2.5.2",
-    "create-astro": "^1.1.0",
+    "create-astro": "^1.2.4",
     "create-next-app": "^12.2.5",
     "create-react-app": "^5.0.1",
     "create-redwood-app": "^3.2.0",
+    "create-t3-app": "^7.5.6",
     "create-vite": "^3.1.0"
   }
 }

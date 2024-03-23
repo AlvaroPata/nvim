@@ -3,7 +3,7 @@
 
 [user]
 	email = helmanrm@gmail.com
-	name = Álvaro Pata
+	name = Álvaro Rodríguez Martín
 
 [color]
   branch = auto
@@ -18,7 +18,7 @@
 
 [core]
   pager = less -FRSX
-	editor = nvim
+	editor = code -n -w
 
 [alias]
   co = checkout
@@ -64,4 +64,10 @@
 	required = true
 
 [url "git@github.com:"]
-	insteadOf = https://github.com/
+  insteadOf = https://github.com/
+
+[includeIf "gitdir:~/Code/Atheneum/"]
+  path = ~/.gitconfig-atheneum
+
+[maintenance]
+	repo = /Users/alvarorodriguezmartin/Code/Atheneum/athena-one
