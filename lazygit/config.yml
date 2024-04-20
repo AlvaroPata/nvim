@@ -1,0 +1,11 @@
+git:
+  paging:
+    colorArg: always
+    pager: delta --no-gitconfig --dark --paging=never 
+customCommands:
+  - key: "C"
+    command: "git cz c --disable-emoji"
+    description: "commit with commitizen"
+    context: "files"
+    loadingText: "opening commitizen commit tool"
+    subprocess: true
