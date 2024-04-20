@@ -16,3 +16,4 @@ planetscale
 github-copilot
 fish
 raycast/extensions/*
+*.pyc
