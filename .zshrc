@@ -353,3 +353,5 @@ nuke_npm ()
 # EZA -- Better ls
 alias ls="eza --long --color=always --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 
+# TheFuck -- command correction tool
+eval $(thefuck --alias)
