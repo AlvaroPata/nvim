@@ -349,3 +349,7 @@ nuke_npm ()
 
 # CodeWhisperer post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.post.zsh"
+
+# EZA -- Better ls
+alias ls="eza --long --color=always --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+
