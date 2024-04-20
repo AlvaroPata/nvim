@@ -13,6 +13,9 @@ fi
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+# Path to .config
+export XDG_CONFIG_HOME="$HOME/.config"
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -159,13 +162,8 @@ bindkey -v
 # Use vim to edit command
 bindkey '^x^x' edit-command-line
 
-# press Alt+a for fzf cd
-bindkey "å" fzf-cd-widget
-
-
 # FZF config
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 
 # Ruby
 export SDKROOT=$(xcrun --show-sdk-path)
