@@ -9,8 +9,7 @@ lvim.format_on_save.enabled = true
 
 local linters = require "lvim.lsp.null-ls.linters"
 linters.setup {
-  { command = "eslint", filetypes = { "typescript", "typescriptreact" } },
-  { name = "typos" }
+  { exe = "eslint", filetypes = { "typescript", "typescriptreact", "javascript", "javascriptreact" } },
 }
 
 local formatters = require "lvim.lsp.null-ls.formatters"
@@ -21,10 +20,6 @@ formatters.setup {
   },
 }
 
-vim.opt.spell = true
-vim.opt.spelllang = 'en_us'
-vim.opt.spelloptions = 'camel'
-
 lvim.plugins = {
   { "tpope/vim-surround" },
   { "rose-pine/neovim",  name = "rose-pine" },
@@ -32,6 +27,13 @@ lvim.plugins = {
     "windwp/nvim-ts-autotag",
     config = function()
       require("nvim-ts-autotag").setup()
+    end,
+  },
+  {
+    "ggandor/leap.nvim",
+    name = "leap",
+    config = function()
+      require("leap").add_default_mappings()
     end,
   },
 }
