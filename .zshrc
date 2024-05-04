@@ -138,7 +138,7 @@ fi
 # Example aliases
 alias zshconf="$EDITOR ~/.zshrc"
 alias ohmyzsh="$EDITOR ~/.oh-my-zsh"
-alias vim=nvim
+alias vim=lvim
 alias runs="python manage.py runserver"
 alias djs="python manage.py shell -i ipython"
 alias posh="poetry shell"
@@ -162,6 +162,7 @@ export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
 # Using Vim mode
 bindkey -v
+
 # Use vim to edit command
 bindkey '^x^x' edit-command-line
 
