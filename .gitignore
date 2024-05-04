@@ -17,3 +17,5 @@ github-copilot
 fish
 raycast/extensions/*
 *.pyc
+tmux/plugins
+
