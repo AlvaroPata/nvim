@@ -39,4 +39,5 @@ lvim.plugins = {
 }
 
 lvim.builtin.nvimtree.setup.view.adaptive_size = true
+lvim.builtin.nvimtree.setup.actions.open_file.quit_on_open = true
 lvim.colorscheme = 'rose-pine'
