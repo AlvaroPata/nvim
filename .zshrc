@@ -145,6 +145,8 @@ alias posh="poetry shell"
 alias bubu="brew update && brew upgrade"
 alias gbcp="git rev-parse --abbrev-ref HEAD | pbcopy" # Git (copy current branch name to clipboard)
 alias gg="lazygit"
+alias detach="tmux detach"
+alias ao="tmux a -t athena-one"
 
 # Pyenv
 eval "$(pyenv init -)"
