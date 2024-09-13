@@ -36,8 +36,19 @@ lvim.plugins = {
       require("leap").add_default_mappings()
     end,
   },
+  {
+    "benfowler/telescope-luasnip.nvim",
+  }
 }
 
+
+lvim.builtin.telescope.on_config_done = function(telescope)
+  pcall(telescope.load_extension, "luasnip")
+end
 lvim.builtin.nvimtree.setup.view.adaptive_size = true
 lvim.builtin.nvimtree.setup.actions.open_file.quit_on_open = true
-lvim.colorscheme = 'rose-pine'
+lvim.colorscheme = 'rose-pine-main'
+
+lvim.builtin.which_key.mappings["ss"] = {
+  "<cmd>Telescope luasnip<CR>", "snippets"
+}

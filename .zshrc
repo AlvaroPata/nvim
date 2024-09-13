@@ -98,7 +98,6 @@ plugins=(
   pyenv
   pylint
   python
-  zsh-autosuggestions
   zsh-syntax-highlighting
   vscode
   vi-mode
@@ -351,7 +350,7 @@ nuke_npm ()
 }
 
 # EZA -- Better ls
-alias ls="eza --long --color=always --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+alias ls="eza --long --color=always --git --icons=always --no-time --no-user --no-permissions"
 
 # TheFuck -- command correction tool
 eval $(thefuck --alias)
